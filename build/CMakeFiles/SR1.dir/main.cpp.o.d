@@ -410,4 +410,10 @@ CMakeFiles/SR1.dir/main.cpp.o: /home/danval/graphics/main.cpp \
  /usr/include/c++/13.1.1/bits/stl_bvector.h \
  /usr/include/c++/13.1.1/bits/vector.tcc /home/danval/graphics/color.h \
  /home/danval/graphics/framebuffer.h /usr/include/c++/13.1.1/array \
- /home/danval/graphics/render.h /home/danval/graphics/vertexGML.h
+ /home/danval/graphics/render.h /home/danval/graphics/vertexGML.h \
+ /home/danval/graphics/objSettings.h /usr/include/c++/13.1.1/fstream \
+ /usr/include/c++/13.1.1/bits/codecvt.h \
+ /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/basic_file.h \
+ /usr/include/c++/13.1.1/x86_64-pc-linux-gnu/bits/c++io.h \
+ /usr/include/c++/13.1.1/bits/fstream.tcc /usr/include/c++/13.1.1/sstream \
+ /usr/include/c++/13.1.1/bits/sstream.tcc

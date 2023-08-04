@@ -6,6 +6,7 @@
 #include "framebuffer.h"
 #include "render.h"
 #include "vertexGML.h"
+#include "objSettings.h"
 
 
 using namespace std;
@@ -26,35 +27,27 @@ void init() {
 
 void render(SDL_Renderer* renderer) {
         // Definir los vértices del cubo
-    std::vector<glm::vec3> vertices = {
-        glm::vec3(1.125986, 0.781798, -1.058748),
-        glm::vec3(0.074502, -0.860990, -1.501048),
-        glm::vec3(1.568286, 0.015753, 0.735004),
-        glm::vec3(0.516802, -1.627034, 0.292704),
-        glm::vec3(-0.516802, 1.627034, -0.292704),
-        glm::vec3(-1.568286, -0.015753, -0.735004),
-        glm::vec3(-0.074502, 0.860990, 1.501048),
-        glm::vec3(-1.125986, -0.781798, 1.058748)
-    };
+    std::vector<glm::vec3> vertices_lo;
 
     // Definir las caras del cubo
-    std::vector<Face> faces = {
-        Face{ {{5, 1, 1}, {3, 2, 1}, {1, 3, 1}} },
-        Face{ {{3, 2, 2}, {8, 4, 2}, {4, 5, 2}} },
-        Face{ {{7, 6, 3}, {6, 7, 3}, {8, 8, 3}} },
-        Face{ {{2, 9, 4}, {8, 10, 4}, {6, 11, 4}} },
-        Face{ {{1, 3, 5}, {4, 5, 5}, {2, 9, 5}} },
-        Face{ {{5, 12, 6}, {2, 9, 6}, {6, 7, 6}} },
-        Face{ {{5, 1, 1}, {7, 13, 1}, {3, 2, 1}} },
-        Face{ {{3, 2, 2}, {7, 14, 2}, {8, 4, 2}} },
-        Face{ {{7, 6, 3}, {5, 12, 3}, {6, 7, 3}} },
-        Face{ {{2, 9, 4}, {4, 5, 4}, {8, 10, 4}} },
-        Face{ {{1, 3, 5}, {3, 2, 5}, {4, 5, 5}} },
-        Face{ {{5, 12, 6}, {1, 3, 6}, {2, 9, 6}} }
-    };
+
+    std::vector<glm::vec3> vertices_out;
+
+    // Definir las caras del cubo
+    std::vector<Face> faces_out;
+    std::vector<Face> out_faces;
+    std::vector<glm::vec3> out_vertices;
+
+
+    if(!loadOBJ("../navecita.obj", out_vertices, out_faces)){
+
+        cout<<"No funciono"<<endl;
+    }
+
+    triangulateFaces(out_faces, out_vertices, vertices_out, faces_out);
 
     // Dibujar el cubo triangulando las caras
-    triangulateAndDrawCube(vertices, faces);
+    triangulateAndDrawCube(vertices_out, faces_out);
     // Render the framebuffer to the screen
     renderBuffer(renderer);
 }

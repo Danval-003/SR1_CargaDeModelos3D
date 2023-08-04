@@ -30,7 +30,7 @@ inline void point(const glm::vec3& vector) {
 
 // En vertexGML.cpp, modifica la función line() para que tome en cuenta las coordenadas z de los vértices
 void line(const glm::vec3& start, const glm::vec3& end) {
-    const int multiply = 120;
+    const int multiply = 1;
     int x1 = round(start.x * multiply), y1 = round(start.y * multiply);
     int x2 = round(end.x * multiply), y2 = round(end.y * multiply);
     float z1 = start.z * multiply, z2 = end.z *multiply;
@@ -76,9 +76,9 @@ void triangulateAndDrawCube(const std::vector<glm::vec3>& vertices, const std::v
     for (const auto& face : faces) {
         if (face.vertexIndices.size() >= 3) {
             // Tomamos los tres primeros vértices de cada cara para triangularla
-            const glm::vec3& A = vertices[face.vertexIndices[0][0] - 1];
-            const glm::vec3& B = vertices[face.vertexIndices[1][0] - 1];
-            const glm::vec3& C = vertices[face.vertexIndices[2][0] - 1];
+            const glm::vec3& A = vertices[face.vertexIndices[0] - 1];
+            const glm::vec3& B = vertices[face.vertexIndices[1] - 1];
+            const glm::vec3& C = vertices[face.vertexIndices[2] - 1];
 
             // Triangular la cara utilizando los vértices A, B y C
             triangle(A, B, C);

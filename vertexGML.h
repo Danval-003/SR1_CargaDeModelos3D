@@ -4,7 +4,10 @@
 #include <array>
 
 struct Face {
-    std::vector<std::array<int, 3>> vertexIndices;
+    std::vector<int> vertexIndices;
+
+    Face(): vertexIndices(){};
+    Face(std::vector<int> temp_vertex): vertexIndices(temp_vertex){};
 };
 
 // En vertexGML.h, cambia la definición de la estructura VertexGML

@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/SR1.dir/framebuffer.cpp.o.d"
   "CMakeFiles/SR1.dir/main.cpp.o"
   "CMakeFiles/SR1.dir/main.cpp.o.d"
+  "CMakeFiles/SR1.dir/objSettings.cpp.o"
+  "CMakeFiles/SR1.dir/objSettings.cpp.o.d"
   "CMakeFiles/SR1.dir/render.cpp.o"
   "CMakeFiles/SR1.dir/render.cpp.o.d"
   "CMakeFiles/SR1.dir/vertexGML.cpp.o"

@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/danval/graphics/color.cpp" "CMakeFiles/SR1.dir/color.cpp.o" "gcc" "CMakeFiles/SR1.dir/color.cpp.o.d"
   "/home/danval/graphics/framebuffer.cpp" "CMakeFiles/SR1.dir/framebuffer.cpp.o" "gcc" "CMakeFiles/SR1.dir/framebuffer.cpp.o.d"
   "/home/danval/graphics/main.cpp" "CMakeFiles/SR1.dir/main.cpp.o" "gcc" "CMakeFiles/SR1.dir/main.cpp.o.d"
+  "/home/danval/graphics/objSettings.cpp" "CMakeFiles/SR1.dir/objSettings.cpp.o" "gcc" "CMakeFiles/SR1.dir/objSettings.cpp.o.d"
   "/home/danval/graphics/render.cpp" "CMakeFiles/SR1.dir/render.cpp.o" "gcc" "CMakeFiles/SR1.dir/render.cpp.o.d"
   "/home/danval/graphics/vertexGML.cpp" "CMakeFiles/SR1.dir/vertexGML.cpp.o" "gcc" "CMakeFiles/SR1.dir/vertexGML.cpp.o.d"
   )

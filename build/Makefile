@@ -201,6 +201,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR1.dir/build.make CMakeFiles/SR1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+objSettings.o: objSettings.cpp.o
+.PHONY : objSettings.o
+
+# target to build an object file
+objSettings.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR1.dir/build.make CMakeFiles/SR1.dir/objSettings.cpp.o
+.PHONY : objSettings.cpp.o
+
+objSettings.i: objSettings.cpp.i
+.PHONY : objSettings.i
+
+# target to preprocess a source file
+objSettings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR1.dir/build.make CMakeFiles/SR1.dir/objSettings.cpp.i
+.PHONY : objSettings.cpp.i
+
+objSettings.s: objSettings.cpp.s
+.PHONY : objSettings.s
+
+# target to generate assembly for a file
+objSettings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SR1.dir/build.make CMakeFiles/SR1.dir/objSettings.cpp.s
+.PHONY : objSettings.cpp.s
+
 render.o: render.cpp.o
 .PHONY : render.o
 
@@ -267,6 +291,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... objSettings.o"
+	@echo "... objSettings.i"
+	@echo "... objSettings.s"
 	@echo "... render.o"
 	@echo "... render.i"
 	@echo "... render.s"
