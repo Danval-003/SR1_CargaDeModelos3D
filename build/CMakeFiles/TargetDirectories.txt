@@ -1,3 +1,0 @@
-/home/danval/graphics/build/CMakeFiles/SR1.dir
-/home/danval/graphics/build/CMakeFiles/edit_cache.dir
-/home/danval/graphics/build/CMakeFiles/rebuild_cache.dir
